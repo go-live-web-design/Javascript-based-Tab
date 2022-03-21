@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <style type="text/css">
+
+*{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+    width: 100%;
+  vertical-align: baseline;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+    
+}
+html,body {
+  line-height: 1;
+    background: #ffffff;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.container{
+    width: 50rem;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px  rgb(0, 0, 0,0.2);
+    margin: 0 auto;
+    padding: 2rem;
+}
+.container > h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+
+.item-container{
+    width: 100%;
+    height: 17rem;
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.left-bar{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+li{
+    box-sizing: border-box;
+    margin: 0;
+    width: 10rem;
+    height: 4rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    
+    border-radius: 0.6rem;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 5px 5px  rgb(0, 0, 0,0.2);
+}
+
+ul .whitecoloricon{
+    color: white;
+}
+
+
+.active{
+    background-color: rgb(220, 103, 255);
+    transition: 300ms;
+}
+
+.whitecolor{
+    color: white;
+}
+
+.right-bar{
+    width: 100%;
+    height: 16rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-bar h1{
+    margin: 0;
+    font-size: 2rem;
+}
+.right-bar p{
+    line-height: 21px;
+}
+  </style>
+  <section>
+<div class="container">
+        <h1>CSS Vertical Tabs</h1>
+        <div class="item-container">
+            <div class="left-bar">
+                <ul>
+                    <li class="active whitecolor"><ion-icon name="home-outline"></ion-icon>Home</box-icon></li>
+                    <li><ion-icon name="browsers-outline" ></ion-icon>Blog</box-icon></li>
+                    <li><ion-icon name="help-circle-outline"></ion-icon>Help</box-icon></li>
+                    <li><ion-icon name="code-slash-outline"></ion-icon>Code</box-icon></li>
+                    <li><ion-icon name="person-outline"></ion-icon>About</box-icon></li>
+                </ul>
+            </div>
+            <div class="right-bar">
+                <h1 class="title">Home Content</h1>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Corporis dignissimos repellendus quod voluptate nam, 
+                    deleniti maxime, eligendi reiciendis molestias consequuntur 
+                    nobis, magnam facilis vero temporibus culpa possimus porro 
+                    quos nihil odit dolor beatae eaque dolorum quam? Modi 
+                    pariatur quis voluptate ea cum ullam deserunt nostrum. 
+                    Quaerat laborum sequi nemo aut, praesentium dolor 
+                    accusantium similique quod? Sit asperiores cupiditate 
+                    voluptatibus aperiam quibusdam facilis sequi, similique, 
+                    vero consectetur corporis qui tempore est mollitia, quidem 
+                    quasi nihil commodi expedita! Voluptates sit voluptatem 
+                    ad? Facere, at voluptatibus beatae in nihil porro 
+                    laudantium exercitationem dolores tenetur deleniti. 
+                    Porro aliquam neque quia officiis itaque nulla corrupti?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/3_javascript/verticaltab.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </section>
+</body>
+</html>
